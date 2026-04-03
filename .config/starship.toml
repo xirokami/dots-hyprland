@@ -15,7 +15,7 @@ $kubernetes\
   [❯ ](fg:blue)\
 """ 
 
-palette = 'tokyo_night'
+palette = 'catppuccin_mocha'
 
 [directory]
 style = 'bg:surface0'
