@@ -5,10 +5,23 @@
   "fillMode": "fit",
   "thumbCacheReady": true,
   "active": true,
-  "currentWallpaper": "",
+  "currentWallpaper": "/home/xiro/Pictures/Wallpapers/ELDEN RING™ 2024-07-20 23-09-54.mp4",
   "hardwareAcceleration": false,
   "automation": false,
   "automationMode": "random",
   "automationTime": 300,
-  "isPlaying": false
+  "isPlaying": true,
+  "oldWallpapers": {
+    "DP-2": {
+      "light": "/home/xiro/Pictures/Wallpapers/wallhaven_6l56l6.jpg",
+      "dark": {
+        "dark": {
+          "dark": "/home/xiro/Pictures/Wallpapers/wallhaven_6l56l6.jpg",
+          "light": ""
+        },
+        "light": "/home/xiro/Pictures/Wallpapers/wallhaven_6l56l6.jpg"
+      }
+    }
+  },
+  "isMuted": true
 }

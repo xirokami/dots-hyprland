@@ -6,7 +6,7 @@ if status is-interactive
     alias la='lsd -A'
     alias lla='lsd -la'
     alias lt='lsd --tree'
-
+    alias zapret='sudo bash ~/Public/zapret/zapret-discord-youtube-linux/service.sh'
     zoxide init fish | source
     starship init fish | source
 end

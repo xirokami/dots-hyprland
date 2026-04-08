@@ -1,0 +1,38 @@
+{
+  "wallpapersFolder": "~/.local/share/Steam/steamapps/workshop/content/431960",
+  "assetsDir": "",
+  "defaultScaling": "fill",
+  "defaultFps": 60,
+  "defaultVolume": 100,
+  "defaultMuted": true,
+  "defaultAudioReactiveEffects": true,
+  "defaultDisableMouse": false,
+  "defaultDisableParallax": false,
+  "defaultNoFullscreenPause": false,
+  "defaultFullscreenPauseOnlyActive": false,
+  "autoApplyOnStartup": true,
+  "panelLastSelectedPath": "",
+  "screens": {
+    "DP-2": {
+      "path": "/home/xiro/.local/share/Steam/steamapps/workshop/content/431960/3302436589",
+      "scaling": "fit",
+      "volume": 100,
+      "muted": true,
+      "audioReactiveEffects": true,
+      "disableMouse": false,
+      "disableParallax": false
+    }
+  },
+  "lastKnownGoodScreens": {
+    "DP-2": {
+      "path": "/home/xiro/.local/share/Steam/steamapps/workshop/content/431960/3302436589",
+      "scaling": "fit",
+      "volume": 100,
+      "muted": true,
+      "audioReactiveEffects": true,
+      "disableMouse": false,
+      "disableParallax": false
+    }
+  },
+  "runtimeRecoveryPending": false
+}

@@ -47,7 +47,7 @@
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
         "contentPadding": 2,
-        "density": "compact",
+        "density": "default",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
         "fontScale": 1,
@@ -56,12 +56,12 @@
         "hideOnOverview": false,
         "marginHorizontal": 4,
         "marginVertical": 4,
-        "middleClickAction": "none",
+        "middleClickAction": "launcherPanel",
         "middleClickCommand": "",
         "middleClickFollowMouse": false,
         "monitors": [
         ],
-        "mouseWheelAction": "none",
+        "mouseWheelAction": "workspace",
         "mouseWheelWrap": true,
         "outerCorners": true,
         "position": "top",
@@ -125,15 +125,6 @@
             ],
             "left": [
                 {
-                    "colorizeSystemIcon": "none",
-                    "customIconPath": "",
-                    "enableColorization": false,
-                    "icon": "rocket",
-                    "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": false
-                },
-                {
                     "clockColor": "none",
                     "customFont": "",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
@@ -176,7 +167,7 @@
                     "useFixedWidth": false
                 },
                 {
-                    "compactMode": false,
+                    "compactMode": true,
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
@@ -186,10 +177,19 @@
                     "showAlbumArt": true,
                     "showArtistFirst": true,
                     "showProgressRing": true,
-                    "showVisualizer": false,
+                    "showVisualizer": true,
                     "textColor": "none",
                     "useFixedWidth": false,
-                    "visualizerType": "linear"
+                    "visualizerType": "wave"
+                },
+                {
+                    "defaultSettings": {
+                        "compactMode": false,
+                        "defaultDuration": 0,
+                        "iconColor": "none",
+                        "textColor": "none"
+                    },
+                    "id": "plugin:timer"
                 }
             ],
             "right": [
@@ -205,37 +205,6 @@
                     ]
                 },
                 {
-                    "defaultSettings": {
-                        "desktopTip": true,
-                        "flatpak": true,
-                        "hideOnEmpty": false,
-                        "nameCmd": "(checkupdates; paru -Qua;) | awk '{print $1}'",
-                        "newVerCmd": "(checkupdates; paru -Qua;) | awk '{print $4}'",
-                        "noctalia": true,
-                        "oldVerCmd": "(checkupdates; paru -Qua;) | awk '{print $2}'",
-                        "refreshInterval": 120,
-                        "refreshTimer": true,
-                        "toast": true,
-                        "updateCmd": "ghostty -e bash -c 'echo \"Updating System...\";paru; flatpak update; read -n 1 -p \"Press any key to exit...\"'"
-                    },
-                    "id": "plugin:arch-updater"
-                },
-                {
-                    "displayMode": "alwaysHide",
-                    "iconColor": "none",
-                    "id": "Network",
-                    "textColor": "none"
-                },
-                {
-                    "deviceNativePath": "__default__",
-                    "displayMode": "graphic",
-                    "hideIfIdle": false,
-                    "hideIfNotDetected": true,
-                    "id": "Battery",
-                    "showNoctaliaPerformance": false,
-                    "showPowerProfiles": false
-                },
-                {
                     "hideWhenZero": false,
                     "hideWhenZeroUnread": false,
                     "iconColor": "none",
@@ -245,12 +214,26 @@
                 },
                 {
                     "defaultSettings": {
-                        "compactMode": false,
-                        "defaultDuration": 0,
-                        "iconColor": "none",
-                        "textColor": "none"
+                        "assetsDir": "",
+                        "autoApplyOnStartup": true,
+                        "defaultAudioReactiveEffects": true,
+                        "defaultDisableMouse": false,
+                        "defaultDisableParallax": false,
+                        "defaultFps": 30,
+                        "defaultFullscreenPauseOnlyActive": false,
+                        "defaultMuted": true,
+                        "defaultNoFullscreenPause": false,
+                        "defaultScaling": "fill",
+                        "defaultVolume": 100,
+                        "lastKnownGoodScreens": {
+                        },
+                        "panelLastSelectedPath": "",
+                        "runtimeRecoveryPending": false,
+                        "screens": {
+                        },
+                        "wallpapersFolder": "~/.local/share/Steam/steamapps/workshop/content/431960"
                     },
-                    "id": "plugin:timer"
+                    "id": "plugin:linux-wallpaperengine-controller"
                 }
             ]
         }
@@ -284,10 +267,10 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Noctalia (default)",
+        "predefinedScheme": "Tokyo Night",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": true
+        "useWallpaperColors": false
     },
     "controlCenter": {
         "cards": [
@@ -327,9 +310,6 @@
                     "id": "Bluetooth"
                 },
                 {
-                    "id": "WallpaperSelector"
-                },
-                {
                     "id": "NoctaliaPerformance"
                 }
             ],
@@ -338,13 +318,31 @@
                     "id": "Notifications"
                 },
                 {
-                    "id": "PowerProfile"
-                },
-                {
                     "id": "KeepAwake"
                 },
                 {
-                    "id": "NightLight"
+                    "defaultSettings": {
+                        "audioCodec": "opus",
+                        "audioSource": "default_output",
+                        "colorRange": "limited",
+                        "copyToClipboard": false,
+                        "customReplayDuration": "30",
+                        "directory": "",
+                        "filenamePattern": "recording_yyyyMMdd_HHmmss",
+                        "frameRate": "60",
+                        "hideInactive": false,
+                        "iconColor": "none",
+                        "quality": "very_high",
+                        "replayDuration": "30",
+                        "replayEnabled": false,
+                        "replayStorage": "ram",
+                        "resolution": "original",
+                        "restorePortalSession": false,
+                        "showCursor": true,
+                        "videoCodec": "h264",
+                        "videoSource": "portal"
+                    },
+                    "id": "plugin:screen-recorder"
                 }
             ]
         }
@@ -356,6 +354,11 @@
         "monitorWidgets": [
             {
                 "name": "eDP-1",
+                "widgets": [
+                ]
+            },
+            {
+                "name": "DP-2",
                 "widgets": [
                 ]
             }
@@ -492,7 +495,7 @@
         "firstDayOfWeek": -1,
         "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
-        "name": "Сосногорск, RU",
+        "name": "Vorkuta",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": false,
@@ -674,23 +677,11 @@
             },
             {
                 "enabled": true,
-                "id": "discord"
-            },
-            {
-                "enabled": true,
                 "id": "telegram"
             },
             {
                 "enabled": true,
-                "id": "zenBrowser"
-            },
-            {
-                "enabled": true,
                 "id": "yazi"
-            },
-            {
-                "enabled": true,
-                "id": "qt"
             },
             {
                 "enabled": true,
@@ -719,6 +710,14 @@
             {
                 "enabled": true,
                 "id": "kcolorscheme"
+            },
+            {
+                "enabled": true,
+                "id": "steam"
+            },
+            {
+                "enabled": true,
+                "id": "qt"
             }
         ],
         "enableUserTheming": false
@@ -729,7 +728,7 @@
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.93,
+        "panelBackgroundOpacity": 0.67,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "attached",
@@ -741,7 +740,7 @@
         "automationEnabled": false,
         "directory": "/home/xiro/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
-        "enabled": true,
+        "enabled": false,
         "favorites": [
         ],
         "fillColor": "#000000",
@@ -783,7 +782,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "breakcore",
+        "wallhavenQuery": "lain",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
