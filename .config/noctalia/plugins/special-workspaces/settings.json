@@ -18,5 +18,5 @@
     }
   ],
   "drawer": false,
-  "hideEmptyWorkspaces": false
+  "hideEmptyWorkspaces": true
 }

@@ -24,7 +24,7 @@
         "showCategories": true,
         "showIconBackground": false,
         "sortByMostUsed": true,
-        "terminalCommand": "alacritty -e",
+        "terminalCommand": "kitty -e",
         "viewMode": "list"
     },
     "audio": {
@@ -47,7 +47,7 @@
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
         "contentPadding": 2,
-        "density": "default",
+        "density": "compact",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
         "fontScale": 1,
@@ -98,29 +98,6 @@
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
-                },
-                {
-                    "defaultSettings": {
-                        "borderRadius": 1,
-                        "expandDirection": "down",
-                        "focusBorderColor": "primary",
-                        "mainIcon": "layout-grid",
-                        "primaryPillColor": "none",
-                        "primaryShowPill": false,
-                        "primarySize": 0.9,
-                        "primarySymbolColor": "none",
-                        "secondaryPillColor": "primary",
-                        "secondaryShowPill": true,
-                        "secondarySize": 0.9,
-                        "secondarySymbolColor": "none",
-                        "workspaces": [
-                            {
-                                "icon": "message",
-                                "name": "communication"
-                            }
-                        ]
-                    },
-                    "id": "plugin:special-workspaces"
                 }
             ],
             "left": [
@@ -205,6 +182,21 @@
                     ]
                 },
                 {
+                    "displayMode": "alwaysHide",
+                    "iconColor": "none",
+                    "id": "Network",
+                    "textColor": "none"
+                },
+                {
+                    "deviceNativePath": "BAT0",
+                    "displayMode": "graphic",
+                    "hideIfIdle": false,
+                    "hideIfNotDetected": true,
+                    "id": "Battery",
+                    "showNoctaliaPerformance": false,
+                    "showPowerProfiles": false
+                },
+                {
                     "hideWhenZero": false,
                     "hideWhenZeroUnread": false,
                     "iconColor": "none",
@@ -214,26 +206,24 @@
                 },
                 {
                     "defaultSettings": {
-                        "assetsDir": "",
-                        "autoApplyOnStartup": true,
-                        "defaultAudioReactiveEffects": true,
-                        "defaultDisableMouse": false,
-                        "defaultDisableParallax": false,
-                        "defaultFps": 30,
-                        "defaultFullscreenPauseOnlyActive": false,
-                        "defaultMuted": true,
-                        "defaultNoFullscreenPause": false,
-                        "defaultScaling": "fill",
-                        "defaultVolume": 100,
-                        "lastKnownGoodScreens": {
-                        },
-                        "panelLastSelectedPath": "",
-                        "runtimeRecoveryPending": false,
-                        "screens": {
-                        },
-                        "wallpapersFolder": "~/.local/share/Steam/steamapps/workshop/content/431960"
+                        "debounceMs": 300,
+                        "enabled": true,
+                        "language": "auto",
+                        "maxEventsPerSecond": 20,
+                        "maxVisible": 4,
+                        "perWorkspace": false,
+                        "workspaceMaxVisible": {
+                        }
                     },
-                    "id": "plugin:linux-wallpaperengine-controller"
+                    "id": "plugin:niri-auto-tile"
+                },
+                {
+                    "defaultSettings": {
+                        "animationsFolder": "~/.config/niri/animations",
+                        "iconColor": "none",
+                        "targetFile": "~/.config/niri/config.kdl"
+                    },
+                    "id": "plugin:niri-animation-picker"
                 }
             ]
         }
@@ -270,7 +260,7 @@
         "predefinedScheme": "Tokyo Night",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -311,6 +301,9 @@
                 },
                 {
                     "id": "NoctaliaPerformance"
+                },
+                {
+                    "id": "WallpaperSelector"
                 }
             ],
             "right": [
@@ -404,7 +397,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/xiro/Pictures/Wallpapers/wallhaven_7p8zg3.jpg",
+        "avatarImage": "/home/xiro/Pictures/Wallpapers/agnes-tachyon-uma-musume.gif",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
@@ -673,10 +666,6 @@
         "activeTemplates": [
             {
                 "enabled": true,
-                "id": "hyprland"
-            },
-            {
-                "enabled": true,
                 "id": "telegram"
             },
             {
@@ -718,6 +707,14 @@
             {
                 "enabled": true,
                 "id": "qt"
+            },
+            {
+                "enabled": true,
+                "id": "hyprland"
+            },
+            {
+                "enabled": true,
+                "id": "niri"
             }
         ],
         "enableUserTheming": false
@@ -740,7 +737,7 @@
         "automationEnabled": false,
         "directory": "/home/xiro/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
-        "enabled": false,
+        "enabled": true,
         "favorites": [
         ],
         "fillColor": "#000000",

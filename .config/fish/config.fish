@@ -1,7 +1,7 @@
 if status is-interactive
     set -g fish_greeting ''
 
-    alias ls='lsd '
+    alias ls='lsd'
     alias l='lsd -l'
     alias la='lsd -A'
     alias lla='lsd -la'
