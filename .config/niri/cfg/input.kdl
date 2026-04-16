@@ -1,6 +1,10 @@
 // ────────────── Input Configuration ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
-
+gestures {
+  hot-corners{
+    off
+  }
+}
 input {
     keyboard {
 xkb {
