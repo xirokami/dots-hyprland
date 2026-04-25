@@ -23,3 +23,6 @@ debug {
 hotkey-overlay {
   skip-at-startup
 }
+clipboard {
+    disable-primary
+}

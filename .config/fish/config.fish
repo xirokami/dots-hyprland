@@ -1,6 +1,6 @@
 if status is-interactive
     set -g fish_greeting ''
-
+    alias n='nvim'
     alias ls='lsd'
     alias l='lsd -l'
     alias la='lsd -A'

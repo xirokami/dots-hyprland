@@ -125,8 +125,8 @@ binds {
     Mod+SHIFT+S                         { screenshot; }
     CTRL+Shift+2                        { screenshot-screen; }
     CTRL+Shift+3                        { screenshot-window; }
-    ALT+0                               { spawn-sh "~/Public/xiro/test/test.sh savea"; }
-    ALT+9                               { spawn-sh "~/Public/xiro/test/test.sh saveb"; }
+    ALT+0                               { spawn-sh "~/dotfiles/scripts/gsr.sh savea"; }
+    ALT+9                               { spawn-sh "~/dotfiles/scripts/gsr.sh saveb"; }
  
     // ─── Emergency Escape Key ───
     // Use this when a fullscreen app blocks your keybinds.
